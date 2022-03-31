@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+
+<body>
+
+    <div>
+        <h2>Available Courses</h2>
+
+        @foreach(string coursename in @Model.CourseList)
+
+        {
+            <p>@coursename</p>
+        }
+
+    </div>
+
+</body>
+
+</html>
