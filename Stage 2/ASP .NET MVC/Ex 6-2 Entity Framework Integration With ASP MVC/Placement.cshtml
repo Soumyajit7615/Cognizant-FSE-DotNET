@@ -1,0 +1,25 @@
+@model IEnumerable<ASP_EF_App1.Models.Placement>
+<h1>
+    <strong>Students Placements Details</strong>
+</h1>
+<table>
+    <tbody>
+        <tr>
+            <th>Placement Id</th>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Company</th>
+            <th>Placement Year</th>
+        </tr>
+        @foreach(var student in Model)
+        {
+        <tr>
+            <td>@student.PlacementId</td>
+            <td>@student.StudentId</td>
+            <td>@student.StudentName</td>
+            <td>@student.Company</td>
+            <td>@student.PlacementYear</td>
+        </tr>
+        }
+    </tbody>
+</table>
