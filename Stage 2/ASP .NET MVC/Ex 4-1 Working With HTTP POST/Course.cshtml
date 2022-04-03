@@ -1,0 +1,44 @@
+<h1>Enter New Course Details</h1>
+<form method="post>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <label asp-for="CourseName"></label>
+                </td>
+                <td>
+                    <input asp-for="CourseName"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="CourseId"></label>
+                </td>
+                <td>
+                    <input asp-for="CourseId"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="Duration"></label>
+                </td>
+                <td>
+                    <input asp-for="Duration"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label asp-for="Level"></label>
+                </td>
+                <td>
+                    <input asp-for="Level"/>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <input type="submit" name="submit" value="Submit"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
